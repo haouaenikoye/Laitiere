@@ -1,0 +1,966 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Ma laitiere</title>
+    <!-- BOOTSTRAP installation -->
+    <!-- Latest compiled and minified Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- Latest compiled and minified Bootstrap JavaScript + JQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css?family=Gochi+Hand|Kaushan+Script|Merienda|Permanent+Marker" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Frijole" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="container-fluid">
+                <!-- Brand and toggle get grouped for better mobile display -->
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                      <span class="sr-only">
+                        Basculer la navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                    </button>
+                    <img class="pull-left" src="images/couverture.jpeg">
+                    <a class="navbar-brand" href="#">Ma laitiere</a>
+                    <p class="hidden-xs navbar-text"></p>
+                </div>
+
+                <!-- Collect the nav links, forms, and other content for toggling -->
+                <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="lislide"><a href="#accueil">Qui sommes nous</a></li>
+                        <li class="lislide"><a href="#produit">Nos produits</a></li>
+                        <li class="lislide"><a href="#contact">Nous contacter</a></li>
+                        <li class="lislide"><a href="#map">Nous trouver</a></li>
+                    </ul>
+                    <form class="navbar-form navbar-left">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Chercher">
+                        </div>
+                        <button type="submit" class="btn btn-default">
+                          <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                        </button>
+                        <button type="button" class="btn btn-warning navbar-btn" id="myBtn"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Panier</button>
+                    </form>
+                </div>
+                <!-- /.navbar-collapse -->
+            </div>
+            <!-- /.container-fluid -->
+        </nav>
+    </header>
+    <!-- header carrousel image-->
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        </ol>
+        <!-- Wrapper for slides -->
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img class="carrouselImg" src="images/v2.jpg" alt="Ma ferme">
+                <div class="carousel-caption">
+                    <h1 class="nomdusite">Bienvenue sur mon site </br>Ma laitiere</h1>
+                </div>
+            </div>
+            <div class="item">
+                <img class="carrouselImg" src="images/v1.jpg" alt="Mes vaches">
+                <div class="carousel-caption">
+                    <h1 class="nomdusite">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</h1>
+                </div>
+            </div>
+            <div class="item">
+                <img class="carrouselImg" src="images/v3.jpg" alt="Mes vaches">
+                <div class="carousel-caption">
+                    <h1 class="nomdusite">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</h1>
+                </div>
+            </div>
+        </div>
+        <!-- Controls -->
+        <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+            <span class="sr-only">Précédent</span>
+        </a>
+        <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+            <span class="sr-only">Suivant</span>
+        </a>
+    </div>
+    <!-- header carrousel text-->
+    <div id="text-carousel" class="carousel slide" data-ride="carousel">
+        <!-- Wrapper for slides -->
+        <div class="row ligne">
+            <div class="col-xs-12">
+                <div class="carousel-inner">
+                    <div class="item active">
+                        <div class="carousel-content">
+                            <div class="conterneurTextCarrousel">
+                                <p class="histoire">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="carousel-content">
+                            <div class="conterneurTextCarrousel">
+                                <p class="histoire">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <div class="carousel-content">
+                            <div class="conterneurTextCarrousel">
+                                <p class="histoire">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Corps du site-->
+    <!-- S-->
+    <div id="accueil">
+        <div class="blockSpace"></div>
+        <div class="container-fluid conteneur">
+            <h2>Qui sommes nous</h2>
+            <div class="blockSpace1"></div>
+            <div class="col-xs-12 col-sm-8 col-md-7 col-lg-6">
+                <p class="text-left" id="textS">
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut</br>
+                    </br>
+
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</br>
+                    </br>
+
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut.</br>
+                </p>
+            </div>
+            <div class="col-xs-12 col-sm-4 col-md-5 col-lg-6">
+                <img class="pull-left" id="S" src="images/S1.jpg "alt="">
+            </div>
+        </div>
+    </div>
+    <!--Produits-->
+    <div id="produit">
+        <div class="blockSpace"></div>
+        <div class="container-fluid conteneur">
+            <h2> Nos Produits</br></h2>
+            <div class="blockSpace1"></div>
+            <!-- Premier produit -->
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="thumbnail product">
+                    <img src="images/cru.jpg" alt="...">
+                    <div class="caption">
+                        <h3>Lait cru x3</h3>
+                        <p>Lait cru entier.</p>
+                        <p>1 litre. prix unitaire : 2000 F</p><br>
+
+                        <!-- Groupe de boutons -->
+
+                        <div class="increase">
+                            <div class="input-group  col-md-6 col-lg-6 col-sm-6 col-xs-5">
+                                <span class="input-group-btn">
+                              <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[1]">
+                                <span class="glyphicon glyphicon-minus"></span>
+                                </button>
+                                </span>
+                                <input type="text" name="quant[1]" class="form-control input-number" value="1" min="1" max="10">
+                                <span class="input-group-btn">
+                              <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[1]">
+                                <span class="glyphicon glyphicon-plus"></span>
+                                </button>
+                                </span>
+                            </div>
+                            <div class="boutonPanier">
+                                <button type="button" class="btn btn-warning navbar-btn"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Ajouter</br> au panier</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Deuxième produit -->
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="thumbnail product">
+                    <img src="images/entier.jpg" alt="...">
+                    <div class="caption">
+                        <h3>Lait cru entier x5</h3>
+                        <p>Lait cru entier</p>
+                        <p>1 litre. Prix unitaire : 2500 F</p><br>
+
+                        <!-- Groupe de boutons -->
+
+                        <div class="increase">
+                            <div class="input-group  col-md-6 col-lg-6 col-sm-6 col-xs-5">
+                                <span class="input-group-btn">
+                <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[2]">
+                    <span class="glyphicon glyphicon-minus"></span>
+                                </button>
+                                </span>
+                                <input type="text" name="quant[2]" class="form-control input-number" value="1" min="1" max="10">
+                                <span class="input-group-btn">
+                <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[2]">
+                    <span class="glyphicon glyphicon-plus"></span>
+                                </button>
+                                </span>
+                            </div>
+                            <div class="boutonPanier">
+                                <button type="button" class="btn btn-warning navbar-btn"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Ajouter</br> au panier</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Troisième produit -->
+
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="thumbnail product">
+                    <img src="images/ecremé.jpg" alt="...">
+                    <div class="caption">
+                        <h3>Lait écrémé</h3>
+                        <p>Bouteille de lait écrémé</p>
+                        <p>1 litre. Prix unitaire : 2000F</p><br>
+
+                        <!-- Groupe de boutons -->
+
+                        <div class="increase">
+                            <div class="input-group  col-md-6 col-lg-6 col-sm-6 col-xs-5">
+                                <span class="input-group-btn">
+                <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[3]">
+                    <span class="glyphicon glyphicon-minus"></span>
+                                </button>
+                                </span>
+                                <input type="text" name="quant[3]" class="form-control input-number" value="1" min="1" max="10">
+                                <span class="input-group-btn">
+                <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[3]">
+                    <span class="glyphicon glyphicon-plus"></span>
+                                </button>
+                                </span>
+                            </div>
+                            <div class="boutonPanier">
+                                <button type="button" class="btn btn-warning navbar-btn"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Ajouter</br> au panier</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Quatrième produit -->
+
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="thumbnail product">
+                    <img src="images/fromage.jpg" alt="...">
+                    <div class="caption">
+                        <h3>Fromage- Wagashi</h3>
+                        <p>Fromage au lait cru et entier</p>
+                        <p>250gr. Prix unitaire :3500F</p><br>
+                        <!-- Groupe de boutons -->
+
+                        <div class="increase">
+                            <div class="input-group  col-md-6 col-lg-6 col-sm-6 col-xs-5">
+                                <span class="input-group-btn">
+                <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[4]">
+                    <span class="glyphicon glyphicon-minus"></span>
+                                </button>
+                                </span>
+                                <input type="text" name="quant[4]" class="form-control input-number" value="1" min="1" max="10">
+                                <span class="input-group-btn">
+                <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[4]">
+                    <span class="glyphicon glyphicon-plus"></span>
+                                </button>
+                                </span>
+                            </div>
+                            <div class="boutonPanier">
+                                <button type="button" class="btn btn-warning navbar-btn"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Ajouter</br> au panier</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cinquième produit -->
+
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="thumbnail product">
+                    <img src="images/uile de vache.jpg" alt="...">
+                    <div class="caption">
+                        <h3>Haougui</h3>
+                        <p>Huile de vache </p>
+                        <p>1L. Prix unitaire : 1500F </p><br>
+
+                        <!-- Groupe de boutons -->
+
+                        <div class="increase">
+                            <div class="input-group  col-md-6 col-lg-6 col-sm-6 col-xs-5">
+                                <span class="input-group-btn">
+                <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[5]">
+                    <span class="glyphicon glyphicon-minus"></span>
+                                </button>
+                                </span>
+                                <input type="text" name="quant[5]" class="form-control input-number" value="1" min="1" max="10">
+                                <span class="input-group-btn">
+                <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[5]">
+                    <span class="glyphicon glyphicon-plus"></span>
+                                </button>
+                                </span>
+                            </div>
+                            <div class="boutonPanier">
+                                <button type="button" class="btn btn-warning navbar-btn"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Ajouter</br> au panier</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sixième produit -->
+
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="thumbnail product">
+                    <img src="images/creme.jpg" alt="...">
+                    <div class="caption">
+                        <h3>Creme </h3>
+                        <p>Lait écrémé</p>
+                        <p>300gr. Prix unitaire : 2000 F</p><br>
+
+                        <!-- Groupe de boutons -->
+
+                        <div class="increase">
+                            <div class="input-group  col-md-6 col-lg-6 col-sm-6 col-xs-5">
+                                <span class="input-group-btn">
+                <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[6]">
+                    <span class="glyphicon glyphicon-minus"></span>
+                                </button>
+                                </span>
+                                <input type="text" name="quant[6]" class="form-control input-number" value="1" min="1" max="10">
+                                <span class="input-group-btn">
+                <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[6]">
+                    <span class="glyphicon glyphicon-plus"></span>
+                                </button>
+                                </span>
+                            </div>
+                            <div class="boutonPanier">
+                                <button type="button" class="btn btn-warning navbar-btn"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Ajouter</br> au panier</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Septième produit -->
+
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="thumbnail product">
+                    <img src="images/yaourt.jpg" alt="...">
+                    <div class="caption">
+                        <h3>yaourt sucré</h3>
+                        <p>yaourt sucré au lait de vache </p>
+                        <p>Lot de 3. Prix unitaire : 1500 F</p><br>
+                        <!-- Groupe de boutons -->
+                        <div class="increase">
+                            <div class="input-group  col-md-6 col-lg-6 col-sm-6 col-xs-5">
+                                <span class="input-group-btn">
+                                <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[7]"><span class="glyphicon glyphicon-minus"></span></button>
+                                </span>
+                                <input type="text" name="quant[7]" class="form-control input-number" value="1" min="1" max="10"><span class="input-group-btn">
+                                <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[7]"><span class="glyphicon glyphicon-plus"></span></button>
+                                </span>
+                            </div>
+                            <div class="boutonPanier">
+                                <button type="button" class="btn btn-warning navbar-btn"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Ajouter</br> au panier</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Huitième produit -->
+
+            <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="thumbnail product">
+                    <img src="images/produits/yaourt_nature.jpg" alt="...">
+                    <div class="caption">
+                        <h3>yaourt nature</h3>
+                        <p>yaourt nature au lait de vache</p>
+                        <p>Lot de 6. Prix unitaire : 1500 F</p><br>
+                        <!-- Groupe de boutons -->
+                        <div class="increase">
+                            <div class="input-group  col-md-6 col-lg-6 col-sm-6 col-xs-5"><span class="input-group-btn">
+                            <button type="button" class="btn btn-default btn-number" disabled="disabled" data-type="minus" data-field="quant[8]"><span class="glyphicon glyphicon-minus"></span></button>
+                                </span>
+                                <input type="text" name="quant[8]" class="form-control input-number" value="1" min="1" max="10"><span class="input-group-btn">
+                            <button type="button" class="btn btn-default btn-number" data-type="plus" data-field="quant[8]"><span class="glyphicon glyphicon-plus"></span></button>
+                                </span>
+                            </div>
+                            <div class="boutonPanier">
+                                <button type="button" class="btn btn-warning navbar-btn"><span class="glyphicon glyphicon-shopping-cart" aria-hidden="true"></span> Ajouter</br> au panier</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--contact-->
+    <div class="container-fluid conteneur">
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="contact">
+            <div class="blockSpace1"></div>
+            <h2>Nous contacter</h2>
+            <div class="blockSpace1"></div>
+            <form>
+                <div class="form-group">
+                    <label for="Nom">Nom</label>
+                    <input type="text" class="form-control" id="exampleInputNom" placeholder="Nom">
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="Nom">Prénom</label>
+                    <input type="text" class="form-control" id="exampleInputPrenom" placeholder="Prénom">
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="Nom">Email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail" placeholder="Email">
+                </div>
+                <br>
+                <div class="form-group">
+                    <label for="Nom">Votre message</label>
+                    <textarea class="form-control" rows="3"></textarea>
+                </div>
+                <br>
+                <button type="submit" class="btn btn-default">Envoyer</button>
+            </form>
+            <!--          </br></br></br> -->
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6" id="map">
+            <div class="map">
+                <div class="blockSpace1"></div>
+                <h2>Nous trouver</h2></br>
+                <div class="blockSpace1"></div>
+                <div class="googleMap">
+                    <iframe src=""
+                        width="600" height="320" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- LA MODAL -->
+
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title">Votre commande</h4>
+                </div>
+                <div class="modal-body">
+
+                    <div class="container-fluid">
+
+                        <div class="row">
+
+                            <div class="col-lg-2">
+                                <form>
+                                    <input id="impression" name="impression" type="button" onclick="imprimer_page()" value="Imprimer" class="pull-right" />
+                                </form>
+                            </div>
+                        </div>
+                        <div class="container boite">
+                            <div class="row">
+                                <div class="col-xs-12">
+                                    <div class="tableaudebord">
+                                        <div class="contact_container">
+                                            <div class="row">
+                                                <div class="col-xs-12">
+                                                    <h2>Récapitulatif de la commande</h2>
+                                                    <div class="recap">
+                                                        <table class="table">
+                                                            <thead class="thead-default">
+                                                                <tr>
+                                                                    <th>#</th>
+                                                                    <th>Nom du produit</th>
+                                                                    <th>Quantité</th>
+                                                                    <th>Prix Unitaire</th>
+                                                                    <th>Sous total</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <th scope="row">1</th>
+                                                                    <td>Fromage- Wagashi</td>
+                                                                    <td>2</td>
+                                                                    <td>3500F</td>
+                                                                    <td>7000F</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row">2</th>
+                                                                    <td>Haougui</td>
+                                                                    <td>1</td>
+                                                                    <td>1500F</td>
+                                                                    <td>3000F</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row">3</th>
+                                                                    <td>Lait cru maison x5</td>
+                                                                    <td>5</td>
+                                                                    <td>2500F</td>
+                                                                    <td>12500F</td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row"></th>
+                                                                    <td></td>
+                                                                    <td>Remise</td>
+                                                                    <td id="remise"></td>
+                                                                    <td id="montantRemise"></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <th scope="row"></th>
+                                                                    <td></td>
+                                                                    <td></td>
+                                                                    <td class="total">Total</td>
+                                                                    <td class="total" id="montant">22500F</td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+
+                                                    </div>
+                                                    <div class="nb_com" style="display:none">9</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class='container boite'>
+                            <div class='row'>
+                                <form class="form-horizontal" role="form">
+                                    <div class='row'>
+                                        <div class="col-lg-12">
+                                            <div class="titleprghp">
+                                                <span class="prg">Informations client</span>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class='row'>
+
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label for="civilite" class="col-sm-2 control-label">Respect</label>
+                                                <div class="col-sm-4">
+                                                    <select class="form-control">
+                                                      <option>Mlle.</option>
+                                                      <option>Mme.</option>
+                                                      <option>M.</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="nom" class="col-sm-2 control-label">Nom :</label>
+                                                <div class="col-sm-6">
+                                                    <input type="text" class="form-control" name="name" id="name">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="prenom" class="col-sm-2 control-label">Prenom :</label>
+                                                <div class="col-sm-6">
+                                                    <input type="text" class="form-control" name="prenom" id="prenom">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="mail" class="col-sm-2 control-label">Email :</label>
+                                                <div class="col-sm-6">
+                                                    <input type="email" class="form-control" name="email" id="email">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="mobile" class="col-sm-2 control-label">Téléphone :</label>
+                                                <div class="col-sm-6">
+                                                    <input type="text" class="form-control" name="mobile" id="mobile">
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label for="societe" class="col-sm-2 control-label">Soci&eacute;t&eacute;</label>
+                                                <div class="col-sm-6">
+                                                    <input type="text" class="form-control" name="societe" id="societe">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="adresse" class="col-sm-2 control-label">Adresse</label>
+                                                <div class="col-sm-6">
+                                                    <input type="text" class="form-control" name="adresse" id="adresse">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="cp" class="col-sm-2 control-label">Code Postal</label>
+                                                <div class="col-sm-2">
+                                                    <input type="text" class="form-control" name="cp" id="cp">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="ville" class="col-sm-2 control-label">Ville</label>
+                                                <div class="col-sm-6">
+                                                    <input type="text" name="ville" class="form-control" id="ville">
+                                                </div>
+                                            </div>
+
+                                            <div class="form-group">
+                                                <label for="pays" class="col-sm-2 control-label">Pays</label>
+                                                <div class="col-sm-6">
+                                                    <input type="text" class="form-control" name="pays" id="pays">
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <div class="titleprghp">
+                                                <span class="prg">Moyen de paiement</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="control-group col-xs-12">
+                                            <input name="radios" id="radios-0" value="1" checked="checked" type="radio"> <img src="images/.gif" />
+                                            <input name="radios" id="radios-1" value="2" type="radio"> <img src="images/.gif" />
+                                            <input name="radios" id="radios-2" value="3" type="radio"> <img src="images/" />
+                                        </div>
+                                    </div>
+                            </div>
+                            </form>
+                        </div>
+                    </div>
+                    <br><br>
+                    <div class="container boite">
+                        <h2>Sponsoriser une de nos produits</h2>
+                        <div id="main_area">
+                            <!-- Slider -->
+                            <p>5% de remise </p>
+                            <div class="row">
+                                <div class="col-xs-12" id="slider">
+                                    <!-- Top part of the slider -->
+                                    <div class="row">
+                                        <div class="col-sm-3" id="carousel-bounding-box">
+                                            <div class="carousel slide" id="myCarousel">
+                                                <!-- Carousel items -->
+                                                <div class="carousel-inner">
+                                                    <div class="bob active item" data-slide-number="0">
+                                                        <img src="images/lait1.jpg"></div>
+
+                                                    <div class="bob item" data-slide-number="1">
+                                                        <img src="images/creme1.jpg"></div>
+
+                                                    <div class="bob item" data-slide-number="2">
+                                                        <img src="images/melange1.jpg"></div>
+
+                                                    <div class="bob item" data-slide-number="3">
+                                                        <img src="images/yaourt1.jpg"></div>
+
+                                                    <div class="bob item" data-slide-number="4">
+                                                        <img src="images/savon1.jpg"></div>
+
+                                                    <div class="bob item" data-slide-number="5">
+                                                        <img src="images/chevveux1.jpg"></div>
+                                                </div>
+                                                <!-- Carousel nav -->
+                                                <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                                                    <span class="glyphicon glyphicon-chevron-left"></span>
+                                                </a>
+                                                <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                                                    <span class="glyphicon glyphicon-chevron-right"></span>
+                                                </a>
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-4" id="carousel-text"></div>
+
+                                        <div id="slide-content" style="display: none;">
+                                            <div id="slide-content-0">
+                                                <h2 class="vache">lait</h2>
+                                                <p>Lorem ipsum dolor sit amet,</p>
+                                            </div>
+
+                                            <div id="slide-content-1">
+                                                <h2 class="vache" name="nomVache1">Creme</h2>
+                                                <p>Lorem ipsum dolor sit amet,</p>
+                                            </div>
+
+                                            <div id="slide-content-2">
+                                                <h2 class="vache" name="nomVache2">Melange</h2>
+                                                <p>Lorem ipsum dolor sit amet,</p>
+                                            </div>
+
+                                            <div id="slide-content-3">
+                                                <h2 class="vache" name="nomVache3">Yaourt</h2>
+                                                <p>Lorem ipsum dolor sit amet,</p>
+                                            </div>
+
+                                            <div id="slide-content-4">
+                                                <h2 class="vache" name="nomVache4">Savon</h2>
+                                                <p>Lorem ipsum dolor sit amet,</p>
+                                            </div>
+
+                                            <div id="slide-content-5">
+                                                <h2 class="vache" name="nomVache5" onclick>Huille pour cheveux</h2>
+                                                <p>Lorem ipsum dolor sit amet,</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--/Slider-->
+                            <!-- ajout name a chaque balise a -->
+                            <div class="row hidden-xs" id="slider-thumbs">
+                                <!-- Bottom switcher of slider -->
+                                <ul class="hide-bullets">
+                                    <li class="col-sm-2">
+                                        <a class="thumbnail" id="carousel-selector-0" name="Marguerite"><img src="images/lait1.jpg"></a>
+                                    </li>
+
+                                    <li class="col-sm-2">
+                                        <a class="thumbnail" id="carousel-selector-1" name="Rosalie"><img src="images/creme1.jpg"></a>
+                                    </li>
+
+                                    <li class="col-sm-2">
+                                        <a class="thumbnail" id="carousel-selector-2" name="Jacquie"><img src="images/melange1.jpg"></a>
+                                    </li>
+
+                                    <li class="col-sm-2">
+                                        <a class="thumbnail" id="carousel-selector-3" name="Framboise"><img src="images/yaourt1.jpg"></a>
+                                    </li>
+
+                                    <li class="col-sm-2">
+                                        <a class="thumbnail" id="carousel-selector-4" name="Brigitte"><img src="images/savon1.jpg"></a>
+                                    </li>
+
+                                    <li class="col-sm-2">
+                                        <a class="thumbnail" id="carousel-selector-5" name="Bernadette"><img src="images/chevveux1.jpg"></a>
+                                    </li>
+
+
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- ajout div -->
+                        <div id="selectVache"></div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" onclick="annuler()" class="btn btn-default" data-dismiss="modal">Annuler</button>
+                        <button type="button" onclick="valider()" class="btn btn-primary">Valider la commande</button>
+                        <p id="validation" style="display:none"><br>La commande a été validée.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    <div class="blockSpace"></div>
+    <!-- Footer-->
+    <footer>
+        <ul class="nav nav-pills">
+            <li class="bottom-bar">
+                <a href="#">Conditions générales</a>
+            </li>
+            <li class="bottom-bar">
+                <a href="#">
+                    Intimité</a>
+            </li>
+            <li class="bottom-bar">
+                <a href="#">À propos</a>
+            </li>
+            <li class="bottom-bar">
+                <a href="#contact">Contact</a>
+            </li>
+        </ul>
+    </footer>
+
+
+    <script type="text/javascript">
+        // slide image
+        window.onload = function() {
+            var imgs = ["images/S7.jpg", "images/S1.jpg", "images/S2.jpg", "images/S3.jpeg", "images/S4.jpg", "images/S5.jpg", "images/S6.jpg",
+                    "images/S1.jpg"
+                ],
+                image = document.getElementById("S"),
+                index = 0;
+
+            function hop() {
+                image.src = imgs[(index++) % imgs.length];
+            };
+            cool = setInterval(hop, 3000);
+            // pour arreter mettre clearInterval(cool); quelque part
+        };
+
+        // modal
+        $(document).ready(function() {
+            $("#myBtn").click(function() {
+                $("#myModal").modal();
+            });
+        });
+
+
+        //plugin bootstrap minus and plus
+        //http://jsfiddle.net/laelitenetwork/puJ6G/
+        $('.btn-number').click(function(e) {
+            e.preventDefault();
+
+            fieldName = $(this).attr('data-field');
+            type = $(this).attr('data-type');
+            var input = $("input[name='" + fieldName + "']");
+            var currentVal = parseInt(input.val());
+            if (!isNaN(currentVal)) {
+                if (type == 'minus') {
+
+                    if (currentVal > input.attr('min')) {
+                        input.val(currentVal - 1).change();
+                    }
+                    if (parseInt(input.val()) == input.attr('min')) {
+                        $(this).attr('disabled', true);
+                    }
+
+                } else if (type == 'plus') {
+
+                    if (currentVal < input.attr('max')) {
+                        input.val(currentVal + 1).change();
+                    }
+                    if (parseInt(input.val()) == input.attr('max')) {
+                        $(this).attr('disabled', true);
+                    }
+
+                }
+            } else {
+                input.val(0);
+            }
+        });
+
+        $('.input-number').focusin(function() {
+            $(this).data('oldValue', $(this).val());
+        });
+
+        $('.input-number').change(function() {
+
+            minValue = parseInt($(this).attr('min'));
+            maxValue = parseInt($(this).attr('max'));
+            valueCurrent = parseInt($(this).val());
+
+            name = $(this).attr('name');
+            if (valueCurrent >= minValue) {
+                $(".btn-number[data-type='minus'][data-field='" + name + "']").removeAttr('disabled')
+            } else {
+                alert('Sorry, the minimum value was reached');
+                $(this).val($(this).data('oldValue'));
+            }
+            if (valueCurrent <= maxValue) {
+                $(".btn-number[data-type='plus'][data-field='" + name + "']").removeAttr('disabled')
+            } else {
+                alert('Sorry, the maximum value was reached');
+                $(this).val($(this).data('oldValue'));
+            }
+        });
+
+        $(".input-number").keydown(function(e) {
+            // Allow: backspace, delete, tab, escape, enter and .
+            if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 190]) !== -1 ||
+                // Allow: Ctrl+A
+                (e.keyCode == 65 && e.ctrlKey === true) ||
+                // Allow: home, end, left, right
+                (e.keyCode >= 35 && e.keyCode <= 39)) {
+                // let it happen, don't do anything
+                return;
+            }
+            // Ensure that it is a number and stop the keypress
+            if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+                e.preventDefault();
+            }
+        });
+
+        // scroll
+        $(function() {
+            $('.lislide>a').on('click', function(e) {
+                e.preventDefault();
+                var hash = this.hash;
+                $('html, body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 500, function() {
+                    window.location.hash = hash;
+                });
+            });
+        });
+
+        // carrousel
+        jQuery(document).ready(function($) {
+
+            $('#myCarousel').carousel({
+                interval: 5000
+            });
+
+            $('#carousel-text').html($('#slide-content-0').html());
+
+            //Handles the carousel thumbnails
+            $('[id^=carousel-selector-]').click(function() {
+                var id = this.id.substr(this.id.lastIndexOf("-") + 1);
+                var id = parseInt(id);
+                $('#myCarousel').carousel(id);
+                //Ajout appel fonction
+                vache(id);
+            });
+
+            // When the carousel slides, auto update the text
+            $('#myCarousel').on('slid.bs.carousel', function(e) {
+                var id = $('.bob.item.active').data('slide-number');
+                $('#carousel-text').html($('#slide-content-' + id).html());
+            });
+            // nouvelle fonction
+            // recupere text d'un ID
+            function vache(id) {
+                // javascript
+                var elements = $("#carousel-selector-" + id);
+                var names = elements.attr('name');
+                $("#selectVache").html("Vous avez choisi de spansoriser " + names + ".");
+                $("#remise").html("5%");
+                $("#montantRemise").html("2500F");
+                $("#montant").html("7500F");
+            };
+        });
+
+        // Ajout message une fois la commande validée
+        function valider() {
+            document.getElementById("validation").style.display = "block";
+        }
+
+        function annuler() {
+            document.getElementById("validation").style.display = "none";
+            $("#selectVache").html("");
+            $("#remise").html("");
+            $("#montantRemise").html("");
+            $("#montant").html("22500F");
+        }
+    </script>
+
+</body>
+
+</html>
